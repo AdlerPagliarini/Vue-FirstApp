@@ -1,0 +1,59 @@
+npm install -g vue-cli
+
+vue init webpack Vue-FirstApp
+
+Var app = new Vuew ({
+el:'#app',
+data:{
+msg: 'Hello'
+}
+});
+
+<div id="app">
+{{msg}}
+</div>
+
+<element v-directiveId="[argument:] expression [filters]">
+
+<span>{{msg}}</span>
+<span v-text="msg">
+<span v-html="msg">
+<span v-once>{{msg}}> not change
+
+<p v-if="show">hi</p>
+<p v-else>bye</p>
+
+<p v-show="show">hi</p>
+
+<li v-for="u in users">{{u.id}}</li>
+
+data:{
+show: true,
+users:[
+{id:1},
+{id:2}]
+}
+
+<div v-bind:class="{active:isActive}"></div>
+<div v-bind:style="{color:color}"></div>
+
+data{
+isActive:true,
+color:red
+}
+
+
+
+Vue.component('my-component',{
+Template: 'This is my component'})
+
+<div id="app">
+	<my-component></my-component>
+</div>
+
+
+
+
+
+
+
