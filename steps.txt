@@ -1,5 +1,9 @@
 npm install -g vue-cli
 
+npm install vue-resource --save //to use http
+
+npm install vue-router --save
+
 vue init webpack Vue-FirstApp
 
 Var app = new Vuew ({

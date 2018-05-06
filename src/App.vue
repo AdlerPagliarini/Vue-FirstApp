@@ -3,6 +3,7 @@
     <img src="./assets/logo.png">
     <br/>
     <br/>
+    <router-link to="/user">Users | </router-link>
     <router-link to="/">Vue Fundamentals | </router-link>
     <router-link to="/hello">Hello CLI </router-link>
     <br/>
