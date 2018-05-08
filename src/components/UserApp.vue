@@ -1,7 +1,6 @@
 <template>
-    <div class="">
+    <div class="users">
       <h1>{{title}}</h1>
-       <button v-on:click="testForEach(users)">Testing foreach</button> <br />
        <form v-on:submit="addUser">
         <input type="text" v-model="newUser.name" placeholder="Name" />
         <br />
@@ -9,11 +8,12 @@
         <br />
         <button type="submit" value="Submit">Add</button>
        </form>
+       <button v-on:click="testForEach(users)">Testing foreach - Console Log</button>
        <h1>Users: {{users.length}} / "Testing compute: {{qtdUser}}"</h1>
        <ul>
           <li v-for="u in users">
-            <input type="checkbox" v-model="u.contacted" />
             <span :class="{contacted: u.contacted}">
+              <input type="checkbox" v-model="u.contacted" />
               {{u.name}}: {{u.email}} - <button v-on:click="deleteUser(u)">Delete</button>
             </span>            
           </li>
@@ -128,7 +128,22 @@ export default {
 </script>
 
 <style scoped>
+*{
+  padding:0 0 10px 0;
+}
 .contacted{
   color:red;
+}
+.users{
+  text-align:center;
+}
+.users input[type='text']{
+  border:1px solid green;
+  margin:0px auto;
+  width: 250px;
+  display:table;
+}
+.users button{
+  padding: 0 10px;
 }
 </style>

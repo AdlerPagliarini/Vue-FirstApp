@@ -110,4 +110,16 @@ li {
 a {
   color: #42b983;
 }
+.hello {
+  text-align:center;
+}
+.hello button{
+  padding: 3px 10px;
+}
+.hello input[type='text']{
+  border:1px solid green;
+  margin:0px auto;
+  width: 250px;
+  display:table;
+}
 </style>

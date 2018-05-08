@@ -50,7 +50,7 @@ router.delete('/customer/:id', function(req, res, next){
 router.put('/customer/:id', function(req, res, next){
     var customer = req.body;
    
-    if(customer._id != req.params.id || Object.keys(customer).length == 0){
+    if(Object.keys(customer).length == 0){
         res.status(400);
         res.json({
             "error" : "Bad Data"

@@ -1,11 +1,28 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <br/>
-    <br/>
-    <router-link to="/user">Users | </router-link>
-    <router-link to="/">Vue Fundamentals | </router-link>
-    <router-link to="/hello">Hello CLI </router-link>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+      <a class="navbar-brand" href="/">Vue First App</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <router-link to="/customers" class="nav-link">Customers</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link to="/user" class="nav-link">Users</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link to="/first-app" class="nav-link">Vue Fundamentals</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link to="/hello" class="nav-link">Hello CLI </router-link>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <img class="vue-logo" src="./assets/logo.png">
     <br/>
     <router-view/>
   </div>
@@ -18,12 +35,27 @@ export default {
 </script>
 
 <style>
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.clear {
+    clear: both;
+}
+.vue-logo{
+  display:table;
+  margin: 30px auto;
+}
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>

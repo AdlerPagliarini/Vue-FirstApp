@@ -8,14 +8,14 @@
        <ul>
           <li v-for="i in items">{{i.title}}</li>
        </ul>
-       <button v-on:click="greet(user.firstName)">Say Hi</button>
-       <br/
-       <input type="text" v-on:keyup="pressKey" v-on:keyup.enter="enterHit"/>
+       <br/>
+       <input type="text" v-on:keyup="pressKey" v-on:keyup.enter="enterHit" placeholder="look console log and write here"/>
        <br/><br/>
        <label>First Name</label>
         <input type="text" v-model="user.firstName" /><br/>
         <label>Last Name</label>
         <input type="text" v-model="user.lastName" /><br/>
+        <button v-on:click="greet(user.firstName)">Say Hi</button>
         {{fullName}}
     </div>
 </template>
@@ -64,4 +64,16 @@ export default {
 </script>
 
 <style scoped>
+.firstapp {
+  text-align:center;
+}
+.firstapp button{
+  padding: 3px 10px;
+}
+.firstapp input[type='text']{
+  border:1px solid green;
+  margin:0px auto;
+  width: 250px;
+  display:table;
+}
 </style>

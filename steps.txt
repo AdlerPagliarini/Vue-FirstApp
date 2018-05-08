@@ -27,9 +27,14 @@ msg: 'Hello'
 <p v-if="show">hi</p>
 <p v-else>bye</p>
 
+{{ btnState ? "button disable" : "button enabled"  }}
+<button v-on:click="changeName" v-bind:disabled="btnState">change name</button>
+
 <p v-show="show">hi</p>
 
 <li v-for="u in users">{{u.id}}</li>
+
+<li v-for="(data, index) in users" :key='index'> {{index}}. {{data.skill}}</li>
 
 data:{
 show: true,
