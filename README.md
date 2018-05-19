@@ -1,21 +1,21 @@
-# vue-firstapp
+Studying Vuejs with youtube tutorials:<br/>
+- Vue.js 2.0 In 60 Minutes
+https://www.youtube.com/watch?v=z6hQqgvGI4Y
 
-> A Vue.js project
+- Vue js Customer Manager App Frontend
+https://www.youtube.com/watch?v=IUgstalu6zo
+</br>
+<img src="https://github.com/AdlerPagliarini/Vue-FirstApp/blob/master/layout.PNG" />
 
-## Build Setup
+<h1>Running the project:</h1>
+<h3>Start the node server</h3>
+	<p>cd /node-api</p>
+	<p>-> npm install</p>
+	<p>-> npm start</p>
+	<p>http://localhost:3000/</p>
 
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+<h3>Start Vue front end (root folder)</h3>
+	<p>./</p>
+	<p>-> npm install</p>
+	<p>-> npm start</p>
+	<p>http://localhost:8080/</p>
